@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Andada+Pro:ital,wght@1,500&family=Hahmlet:wght@300&family=Luxurious+Roman&family=Poppins:ital,wght@0,500;1,500&display=swap');
+body {
+    font-family: 'Poppins', sans-serif;
+}
+.container {
+    padding-left:100px;
+    padding-right:100px;
+    padding-top:20px;
+}
+.top-nav { 
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-top:10px;
+    /* padding:50px; */
+} 
+.nav-section {
+    text-align:right;
+    margin-top:5px;
+}
+.nav-section a {
+    text-decoration:none;
+    color:black;
+    margin-right:20px;  
+    align-items: right;
+}
+.nav-item:hover {
+    color:green;
+}
+/* nav section end */
+
+/* introduse section start */
+
+.introduse-sction {
+    display:flex;
+    /* padding:50px;
+    border:3px solid sandybrown; */
+    
+}
+.button-section {
+    text-decoration:none;
+    background-color:green;
+    color:white;
+    padding:10px 24px ;
+    border-radius:10px;
+}
+.button-section:hover {
+ 
+    color:green;
+    background-color:white;
+    border:2px solid green;
+}
+
+
+.image-section img {
+    height:300px;
+    width:300px;
+    width:100%;
+    padding-left:20px;
+    
+}
+/* introduse section end */
+/* logo section start  */
+.logos-section {
+    display:grid;
+    grid-gap:10px;
+    grid-row-gap: 15px;
+    grid-template-columns: repeat(3,1fr);
+    margin-top:30px;
+    margin-bottom:20px;
+}
+/* logo section end */
+/* prodect section start */
+.top-hade1 {
+    text-align: center;
+    margin-top:50px;
+    margin-bottom: 50px;
+}
+.product-section {
+    display:grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 30px;
+    margin-top:20px;
+    margin-bottom: 30px;
+}
+.product-overoll img {
+    height:150px;
+    width:200px;
+    border-radius:5px;
+}
+.product-overoll {
+    display:flex;
+    flex-direction:column;
+    width:242px;
+    height:370px;
+    padding:17px 14px 37px 14px;
+    box-shadow:15px 15px 30px gray ;
+    border-radius:10px;
+}
+.bold {
+    font-weight: 700;
+    color:grey;
+}
+.filled {
+    color:goldenrod;
+}
+.empty {
+    color :goldenrod;
+}
+/* product section end */
+/* pagenation section */
+.pagenation {
+    text-align:right;
+    color:green;
+}
+/* pagenation section end */
+
+/* optional section start */
+
+.optional-section {
+    display:flex;
+    padding-top: 100px;
+    padding-bottom:30px;
+}
+.image-section img {
+    height:300px;
+    width:300px;
+    width:100%;
+    padding-left:20px;
+    
+}
+.info {
+    width:100%;
+    padding-left: 40px;
+   
+}
+/* optional section end */
+
+/* footer section start */
+.footer-section {
+    text-align:center;
+    color:white;
+    background-color: #0A0826;
+}
+
+/* media quired section */
+/* for mobil */
+@media only screen and (max-width :688px ) {
+    
+    .nav-section {
+        display:none;
+    }
+    .top-hade {
+        text-align: center;
+    }
+    .introduse-sction {
+        display:grid;
+        grid-row-gap: 20px;
+        grid-template-columns: repeat(1,1fr);
+        justify-content: space-evenly;
+    }
+    .logos-section {
+        display:grid;
+        grid-row-gap: 30px;
+        grid-template-columns: repeat(2 ,1fr);
+    }
+    .product-section {
+        display :grid;
+        grid-template-columns: repeat(1 ,1fr);
+        justify-content: space-evenly;
+    }
+    .optional-section {
+        display:grid;
+        grid-template-columns: repeat(1 , 1fr);
+    }
+}
+/* for tablate */
+@media only screen and (min-width :689px) and (max-width:991px ) {
+    
+    .product-section {
+        display:grid;
+        grid-template-columns: repeat(2 , 1fr);
+        justify-content: space-evenly;
+    }
+    .optional-section {
+        justify-content: space-evenly;
+    }
+}
